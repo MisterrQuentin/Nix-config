@@ -5,7 +5,7 @@ let
     owner = "Reledia";
     repo = "glow.yazi";
     rev = "master";  # You might want to pin this to a specific commit or tag for stability
-    sha256 = "sha256-bqaFqjlQ/VgMdt2VVjEI8cIkA9THjOZDgNspNicxlbc=";  # Replace this with the actual hash
+    sha256 = "sha256-fKJ5ld5xc6HsM/h5j73GABB5i3nmcwWCs+QSdDPA9cU=";  # Replace this with the actual hash
   };
   yaziHexyl = pkgs.fetchFromGitHub {
     owner = "Reledia";

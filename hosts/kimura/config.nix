@@ -60,7 +60,7 @@ in
   # LUKS encryption
  boot.initrd.luks.devices = {
    crypted = {
-     device = "/dev/disk/by-uuid/48781bd8-267a-4417-a4a3-be84bd59ac5b";
+     device = "/dev/disk/by-uuid/bc525d17-cd6b-4c85-9300-2709bc6fc169";
      preLVM = true;
      allowDiscards = true;
    };
@@ -85,7 +85,7 @@ in
   # Styling Options
   stylix = {
     enable = true;
-    image = ../../config/wallpapers/0169.jpg;
+    image = ../../config/wallpapers/0045.jpg;
     # base16Scheme = {
     #   base00 = "232136";
     #   base01 = "2a273f";
@@ -384,6 +384,12 @@ in
     android-udev-rules
     android-tools
 
+    # Q apps
+    obsidian
+    freetube
+    zenity
+    libreoffice
+    mullvad
 
     # neomutt and related progs:
     neomutt
@@ -624,29 +630,29 @@ in
       # Add these lines to ensure GPU support
     };
     # Enable Invidious
-    invidious = {
-       enable = true;
-       port = 3000;
-       settings = lib.mkForce {
-         check_tables = true;
-         db = {
-           dbname = "invidious";
-           host = "";
-           password = "";
-           port = 3000;
-           user = "invidious";
-         };
-         host_binding = "0.0.0.0";
-         default_user_preferences = {
-           locale = "en-US";
-           region = "US";
-         };
-         captions = [
-           "English"
-           "English (auto-generated)"
-         ];
-      };
-    };
+    # invidious = {
+    #    enable = true;
+    #    port = 3000;
+    #    settings = lib.mkForce {
+    #      check_tables = true;
+    #      db = {
+    #        dbname = "invidious";
+    #        host = "";
+    #        password = "";
+    #        port = 3000;
+    #        user = "invidious";
+    #      };
+    #      host_binding = "0.0.0.0";
+    #      default_user_preferences = {
+    #        locale = "en-US";
+    #        region = "US";
+    #      };
+    #      captions = [
+    #        "English"
+    #        "English (auto-generated)"
+    #      ];
+    #   };
+    # };
     greetd = {
       enable = true;
       vt = 3;

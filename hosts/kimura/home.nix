@@ -366,11 +366,11 @@ in {
         };
         listener = [
           {
-            timeout = 900;
+            timeout = 1800;
             on-timeout = "hyprlock";
           }
           {
-            timeout = 1200;
+            timeout = 2000;
             on-timeout = "hyprctl dispatch dpms off";
             on-resume = "hyprctl dispatch dpms on";
           }
@@ -423,6 +423,8 @@ in {
     SAVEHIST = 1000000;
     SYSTEMD_PAGER = "${pkgs.neovim}/bin/nvim";
     BAT_THEME = "Monokai Extended Origin";
+    MANPAGER = "nvim +Man!";
+
   };
 
   programs = {
@@ -680,7 +682,7 @@ in {
         # background_opacity = lib.mkForce "0.85";
       };
       extraConfig = ''
-                font_size 20.0
+                font_size 14.0
                 tab_bar_style fade
                 tab_fade 1
                 active_tab_font_style   bold

@@ -44,15 +44,16 @@
         ];
       };
       fonts = {
-        default_size = lib.mkForce "18pt";
-        hints = "bold 18px default_family";
+        default_size = lib.mkForce "12pt";
+        hints = "bold 12px default_family";
       };
       url = {
         default_page = "about:blank";
-        start_pages = [ "http://localhost:3000/feed/subscriptions" ];
+        start_pages = [ "https://openrouter.ai/chat?models=anthropic%2Fclaude-3.5-sonnet" ];
+        #start_pages = [ "http://localhost:3000/feed/subscriptions" ];
       };
       window.transparent = true;
-      zoom.default = "180%";
+      zoom.default = "100%";
     };
     
     searchEngines = {

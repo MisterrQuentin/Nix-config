@@ -15,8 +15,8 @@
   outputs = { self, nixpkgs, home-manager, ... }@inputs:
     let
       system = "x86_64-linux";
-      host = "Thisbe";
-      username = "bimmer";
+      host = "kimura";
+      username = "jedwick";
     in
     {
       nixosConfigurations = {

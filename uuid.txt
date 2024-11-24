@@ -1,1 +1,1 @@
-48781bd8-267a-4417-a4a3-be84bd59ac5b
+└─sda2         crypto_LUKS 2              bc525d17-cd6b-4c85-9300-2709bc6fc169                  

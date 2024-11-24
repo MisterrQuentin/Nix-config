@@ -42,7 +42,7 @@ with lib;
           env = MOZ_ENABLE_WAYLAND, 1
           exec-once = dbus-update-activation-environment --systemd --all
           exec-once = systemctl --user import-environment QT_QPA_PLATFORMTHEME WAYLAND_DISPLAY XDG_CURRENT_DESKTOP QT_QPA_PLATFORM
-          exec-once = pkill swww || true; swww init && swww img /home/${username}/Pictures/Wallpapers/0169.jpg
+          exec-once = pkill swww || true; swww init && swww img /home/${username}/Pictures/Wallpapers/0045.jpg
           exec-once = pkill waybar || true; waybar
           exec-once = pkill swaync || true; swaync
           exec-once = pkill nm-applet || true; nm-applet --indicator
@@ -53,6 +53,7 @@ with lib;
           exec-once=[workspace 2 silent] qutebrowser
           exec-once=[workspace 3 silent] ${pkgs.appimage-run}/bin/appimage-run /opt/appimages/simplex-desktop-x86_64.AppImage
           exec-once=[workspace 4 silent] ${pkgs.appimage-run}/bin/appimage-run /opt/appimages/session-desktop-linux-x86_64-1.14.2.AppImage
+          exec-once=[workspace 5 silent] freetube
           monitor=,preferred,auto,1
           ${extraMonitorSettings}
           general {

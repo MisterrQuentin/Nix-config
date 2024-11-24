@@ -226,7 +226,7 @@ with lib;
       ''
         * {
           font-family: JetBrainsMono Nerd Font Mono;
-          font-size: 16px;
+          font-size: 12px;
           border-radius: 0px;
           border: none;
           min-height: 0px;

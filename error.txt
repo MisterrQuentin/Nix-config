@@ -1,0 +1,28 @@
+warning: Git tree '/home/jedwick/zaneyos' is dirty
+building the system configuration...
+warning: Git tree '/home/jedwick/zaneyos' is dirty
+building '/nix/store/rm3rpjaxmbzsdinih2ixp99mqj2hrw92-source.drv'...
+error:
+       … while calling the 'head' builtin
+
+         at /nix/store/sh0v21n9zc03b94qjj4jkkg5mbsjkpzr-source/lib/attrsets.nix:1574:11:
+
+         1573|         || pred here (elemAt values 1) (head values) then
+         1574|           head values
+             |           ^
+         1575|         else
+
+       … while evaluating the attribute 'value'
+
+         at /nix/store/sh0v21n9zc03b94qjj4jkkg5mbsjkpzr-source/lib/modules.nix:816:9:
+
+          815|     in warnDeprecation opt //
+          816|       { value = addErrorContext "while evaluating the option `${showOption loc}':" value;
+             |         ^
+          817|         inherit (res.defsFinal') highestPrio;
+
+       (stack trace truncated; use '--show-trace' to show the full trace)
+
+       error: hash mismatch in fixed-output derivation '/nix/store/rm3rpjaxmbzsdinih2ixp99mqj2hrw92-source.drv':
+         specified: sha256-bqaFqjlQ/VgMdt2VVjEI8cIkA9THjOZDgNspNicxlbc=
+            got:    sha256-fKJ5ld5xc6HsM/h5j73GABB5i3nmcwWCs+QSdDPA9cU=
